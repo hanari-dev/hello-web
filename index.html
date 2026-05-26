@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ari Han</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">Ari Han</h1>
+      <p class="site-tagline"><em>Web Development · Data Science and AI · UX/UI Design</em></p>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <section class="about-section card">
+      <h2 class="section-heading">About Me</h2>
+      <p class="body-text">
+        Hi, I'm Ari! I'm an aspiring web developer passionate about creating
+        clean, accessible, and responsive websites. I enjoy working with HTML, CSS,
+        and JavaScript to bring ideas to life in the browser.
+      </p>
+      <p class="body-text">
+        My goal is to continue growing as a Full-Stack Developer, while building a
+        portfolio that shows off both my technical skills and my eye for design.
+        Outside of coding, I love playing League of Legends 🎮 and exploring
+        creative outlets like design and dance.
+      </p>
+    </section>
+
+    <section class="skills-section card">
+      <h2 class="section-heading">Skills &amp; Interests</h2>
+      <ul class="skills-list">
+        <li class="skill-tag">HTML &amp; CSS</li>
+        <li class="skill-tag">JavaScript</li>
+        <li class="skill-tag">Python &amp; Pandas</li>
+        <li class="skill-tag">SQL &amp; Data Analysis</li>
+        <li class="skill-tag">Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section class="workspace-section card">
+      <h2 class="section-heading">My Workspace</h2>
+      <figure class="workspace-figure">
+        <img
+          class="workspace-img"
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80"
+          alt="A developer's desk with a laptop displaying code, a notebook, and a coffee mug"
+          width="500"
+        />
+        <figcaption class="workspace-caption">Where the work gets done.</figcaption>
+      </figure>
+    </section>
+
+    <section class="connect-section card">
+      <h2 class="section-heading">Connect With Me</h2>
+      <p class="body-text">Find my work and get in touch:</p>
+      <div class="link-row">
+        <a class="link-btn" href="https://github.com/hanari-dev" target="_blank" rel="noopener noreferrer">My GitHub ↗</a>
+        <a class="link-btn" href="https://linkedin.com/in/ari-han" target="_blank" rel="noopener noreferrer">My LinkedIn ↗</a>
+        <a class="link-btn" href="mailto:ari.han.inbox@gmail.com" target="_blank" rel="noopener noreferrer">Email Me ↗</a>
+      </div>
+    </section>
+
+    <section class="contact-section card">
+      <h2 class="section-heading">Send a Message</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label class="form-label" for="name">Your Name</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="reason">Reason for Reaching Out</label>
+          <select class="form-input" id="reason" name="reason">
+            <option value="">— Select one —</option>
+            <option value="collab">Collaboration</option>
+            <option value="job">Job Opportunity</option>
+            <option value="general">Just Saying Hi</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-input form-textarea" id="message" name="message" rows="5" cols="40" placeholder="What's on your mind?"></textarea>
+        </div>
+        <p><button class="submit-btn" type="submit">Send Message →</button></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text">&copy; Ari Han 2026</p>
+  </footer>
+
+</body>
+</html>
