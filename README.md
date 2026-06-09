@@ -22,6 +22,13 @@ This project showcases my development and design skills. The core focus was to c
     * **OS-Aware Theme Detection:** Includes a `prefers-color-scheme: light` media query to automatically toggle the site's theme based on the user's system preferences.
     * **Modern Aesthetics:** Designed with a refined dark-mode-first aesthetic, utilizing CSS variables for maintainability and consistency.
 
+## Responsive Design Testing
+I have tested the site across different breakpoints to ensure full responsiveness.
+
+| Mobile (375px) | Tablet (768px) | Desktop (1024px) |
+| :---: | :---: | :---: |
+| ![Mobile View](mobile.png) | ![Tablet View](tablet.png) | ![Desktop View](desktop.png)
+
 ## Technologies Used
 * HTML5
 * CSS3 (Variables, Flexbox, Grid, Media Queries, `clamp()`)
