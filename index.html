@@ -3,24 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ari Han</title>
+  <title>Ari Han | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
 
   <header class="site-header">
-    <div class="header-inner">
-      <h1 class="site-title">Ari Han</h1>
-      <p class="site-tagline"><em>Web Development · Data Science and AI · UX/UI Design</em></p>
+    <div class="container header-inner">
+      <div class="site-branding">
+        <h1 class="site-title">Ari Han<span class="accent-star">*</span></h1>
+        <p class="site-tagline">Web Development · Data Science · UX/UI</p>
+      </div>
+      
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="site-main">
+  <main class="site-main container">
 
-    <section class="about-section card">
+    <section id="about" class="about-section card">
       <h2 class="section-heading">About Me</h2>
       <p class="body-text">
         Hi, I'm Ari! I'm an aspiring web developer passionate about creating
@@ -35,42 +46,41 @@
       </p>
     </section>
 
-    <section class="skills-section card">
-      <h2 class="section-heading">Skills &amp; Interests</h2>
+    <section id="skills" class="skills-section card">
+      <h2 class="section-heading">Skills &amp; Technologies</h2>
       <ul class="skills-list">
-        <li class="skill-tag">HTML &amp; CSS</li>
-        <li class="skill-tag">JavaScript</li>
+        <li class="skill-tag">HTML5 &amp; CSS3</li>
+        <li class="skill-tag">JavaScript (ES6+)</li>
         <li class="skill-tag">Python &amp; Pandas</li>
         <li class="skill-tag">SQL &amp; Data Analysis</li>
         <li class="skill-tag">Git &amp; GitHub</li>
+        <li class="skill-tag">Responsive UI/UX</li>
       </ul>
     </section>
 
-    <section class="workspace-section card">
-      <h2 class="section-heading">My Workspace</h2>
-      <figure class="workspace-figure">
-        <img
-          class="workspace-img"
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80"
-          alt="A developer's desk with a laptop displaying code, a notebook, and a coffee mug"
-          width="500"
-        />
-        <figcaption class="workspace-caption">Where the work gets done.</figcaption>
-      </figure>
-    </section>
-
-    <section class="connect-section card">
-      <h2 class="section-heading">Connect With Me</h2>
-      <p class="body-text">Find my work and get in touch:</p>
-      <div class="link-row">
-        <a class="link-btn" href="https://github.com/hanari-dev" target="_blank" rel="noopener noreferrer">My GitHub ↗</a>
-        <a class="link-btn" href="https://linkedin.com/in/ari-han" target="_blank" rel="noopener noreferrer">My LinkedIn ↗</a>
-        <a class="link-btn" href="mailto:ari.han.inbox@gmail.com" target="_blank" rel="noopener noreferrer">Email Me ↗</a>
+    <section id="projects" class="projects-section">
+      <h2 class="section-heading">Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card card">
+          <img class="project-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Laptop on desk displaying code">
+          <h3>Portfolio V1</h3>
+          <p class="body-text">My first HTML profile page built using semantic structure, headings, lists, and links.</p>
+        </article>
+        <article class="project-card card">
+          <img class="project-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Code on a dark monitor screen">
+          <h3>Layout Upgrade</h3>
+          <p class="body-text">Refactored navigation with Flexbox and added a responsive project grid using CSS Grid.</p>
+        </article>
+        <article class="project-card card">
+          <img class="project-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Data charts and analytics on a screen">
+          <h3>Data Dashboard</h3>
+          <p class="body-text">A Python and Pandas data visualization tool showcasing analytical findings.</p>
+        </article>
       </div>
     </section>
 
-    <section class="contact-section card">
-      <h2 class="section-heading">Send a Message</h2>
+    <section id="contact" class="contact-section card">
+      <h2 class="section-heading">Get in Touch</h2>
       <form class="contact-form">
         <div class="form-group">
           <label class="form-label" for="name">Your Name</label>
@@ -91,9 +101,9 @@
         </div>
         <div class="form-group">
           <label class="form-label" for="message">Message</label>
-          <textarea class="form-input form-textarea" id="message" name="message" rows="5" cols="40" placeholder="What's on your mind?"></textarea>
+          <textarea class="form-input form-textarea" id="message" name="message" placeholder="What's on your mind?"></textarea>
         </div>
-        <p><button class="submit-btn" type="submit">Send Message →</button></p>
+        <button class="submit-btn" type="submit">Send Message</button>
       </form>
     </section>
 
