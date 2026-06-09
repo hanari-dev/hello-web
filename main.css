@@ -228,6 +228,16 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1100px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
 /* OS Theme Bonus */
 @media (prefers-color-scheme: light) {
   :root {
